@@ -19,8 +19,7 @@ describe('RegistrationTests', () => {
 		
 		//вторая страница обучения "Упорядочивайте информацию с помощью колонок"
 		cy.get('h2 > span').should('have.text', 'Упорядочивайте информацию с помощью колонок')
-		cy.get('.first-board-image-list-container:last').should('have.text', 'Список делВ процессеГотово') // завтра проверь, сегодня забанили
-
+		cy.get('.first-board-image-list-container:last').should('have.text', 'Список делВ процессеГотово')
 		cy.get('[data-test-id="list-name-input"]').type('Не готово')
 		cy.get('[data-test-id="list-name-display"]').should('have.text', 'Не готово')
 
